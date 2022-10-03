@@ -17,11 +17,13 @@ public class server {
 
         try{
             System.out.println("1, server partito");
-            server = new ServerSocket(6789);
+            server = new ServerSocket(6788);
             client=server.accept();
             server.close();
             indalClient= new BufferedReader(new InputStreamReader(client.getInputStream()));
             outversoClient= new DataOutputStream(client.getOutputStream());
+        
+     
         }
         catch(Exception e){}
         return client;
