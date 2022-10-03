@@ -35,8 +35,7 @@ public class server {
         stringamodificata=stringaRicevuta.toUpperCase();
         System.out.println("7, invio la stringa modificata");
         outversoClient.writeBytes(stringamodificata+'\n');
-        System.out.println("vaffammpc daje un po");
-        client.close();
+        System.out.println("9 daje un po");
 
     }catch(Exception e){}
 }
